@@ -58,7 +58,7 @@ textarea {
 
 body{
     font-family:arial;
-    font-size:13px;
+     font-size:13px;
     background:#ccc; 
 }
 
@@ -68,7 +68,7 @@ ul{
 }
 
 #container{
-    width:960px;
+    width:85%;
     background:#fff;
     margin:10px auto;
     overflow:auto;
@@ -101,6 +101,16 @@ main{
     padding:20px;
 }
 
+section#main{
+    width:70%;
+    float:left;
+}
+
+aside{
+    width:20%;
+    float:right;
+}
+
 footer{
     padding:10px;
     text-align:center;
@@ -112,9 +122,10 @@ footer{
    Media Queries
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 600px) {
 
 }
+
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),
