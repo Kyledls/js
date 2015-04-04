@@ -1,10 +1,30 @@
 function showMood(){
     name = document.getElementById('name').value;
-    name = document.getElementById('mood').value;
+    mood = document.getElementById('mood').value;
     
-    moodString = name+" is "+mood+" today ";
+    if (!name || !mood) {
+        alert("Please fill in all fields");
+        return false;
+    }
+    
+    if (mood == "happy") {
+        face = " :)";
+    } else if (mood =="sad") {
+        face = " :(";
+    }    else {
+         face = " :|"   
+        }
+    }
+    
+    moodString = name+" is "+mood+" today "+face;
     
     holder = document.getElementById('holder').value;
     
     holder.innerHTML = moodString;
+}
+
+function clearMood() {
+    name = document.getElementById('moodForm').reset();
+    holder = document.getElementById('holder');
+    holder.innerHTML = "";
 }
